@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!--
+	Paradigm Shift by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Fiat Bilaller</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Intro -->
+      <section class="intro">
+        <header>
+          <h1 style="color: white;">Fiat Bilaller</h1>
+          <p style="color: white;">Öngörülen Servis Ücreti Hesaplama</p>
+          <ul class="actions">
+            <li>
+              <a href="#first" class="arrow scrolly" style="fill: white;"
+                ><span class="label">Next</span></a
+              >
+            </li>
+          </ul>
+        </header>
+        <div class="content">
+          <span class="image fill" data-position="center"
+            ><img src="images/egea.jpg" alt=""
+          /></span>
+        </div>
+      </section>
+
+      <!-- Section MODEL-->
+      <section id="first">
+        <header>
+          <h2 style="color: white;">Araç Modelİ</h2>
+        </header>
+        <div class="content">
+          <p>
+            Fiat Bilaller servis ücretleri, aracınızın modeline ve ihtiyaç
+            duyduğu hizmetlere bağlı olarak değişiklik gösterebilir.
+          </p>
+          <label>Araç Modeli</label>
+          <select id="model" onchange="modelDegisti()">
+            <option value="">Seçiniz</option>
+            <option value="doblo">Doblo</option>
+            <option value="egea">Egea</option>
+            <option value="fiorino">Fiorino</option>
+            <option value="ducato">Ducato</option>
+            <option value="scudo">Scudo</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- Section YIL-->
+      <section>
+        <header>
+          <h2 style="color: white;">Model Yılı:</h2>
+        </header>
+        <div class="content">
+          <label>Model Yılı</label>
+          <select id="modelYear" onchange="yilDegisti()">
+            <option value="">Önce model seçin</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- Section MOTOR -->
+      <section>
+        <header>
+          <h2 style="color: white;">Motor seçeneği:</h2>
+        </header>
+        <div class="content">
+          <label>Motor</label>
+          <select id="motor" onchange="motorDegisti()">
+  <option value="">Önce model yılı seçin</option>
+</select>
+        </div>
+      </section>
+      
+      <!-- Section KM-->
+      <section>
+        <header>
+          <h2 style="color: white;">Araç km:</h2>
+        </header>
+        <div class="content">
+          <label>Kilometre</label>
+          <select id="km">
+            <option value="">Önce model seçin</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- Section SUBMIT-->
+      <section>
+        <header>
+          <h2 style="color: white;">Tahmİnİ Servİs Ücretİ:</h2>
+        </header>
+        <div class="content">
+          <button onclick="hesapla()">Hesapla</button>
+          <h3 style="margin-top: 1rem;" id="sonuc"></h3>
+        </div>
+      </section>
+
+      <!-- Section ILETISIM-->
+      <section> 
+        <div class="content">
+          <ul class="items">
+            <li>
+              <h3 >Email</h3>
+              <a href="mailto:info@bilaller.com">info@bilaller.com</a>
+            </li>
+            <li>
+              <h3>Telefon</h3>
+              <a href="tel:02422596767">0 242 259 67 67 </a>
+            </li>
+            <li>
+              <h3 >sosyal medya</h3>
+              <ul class="icons">
+                <li>
+                  <a
+                    href="https://www.instagram.com/fiatbilaller"
+                    class="icon brands fa-twitter"
+                    target="_blank"
+                    ><span class="label">Twitter</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/fiatbilaller"
+                    class="icon brands fa-facebook-f"
+                    target="_blank"
+                    ><span class="label">Facebook</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/fiatbilaller"
+                    class="icon brands fa-instagram"
+                    target="_blank"
+                    ><span class="label">Instagram</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <header>
+          <h2 style="color: white;">İLETİŞİME GEÇİN</h2>
+          <ul>
+            <li>
+              <h3 style="color: white;">Adres</h3>
+              <a style="color: white;" href="https://www.google.com/maps?q=Eskişehir" target="_blank">
+              <span style="color: white;">Sarısu Mahallesi Akdeniz Bulvarı Kemer Yolu No: 690 - Konyaalti - Antalya</span>
+            </a>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3193.0827363423073!2d30.59336832627113!3d36.840494515426414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c3940ad0f3126f%3A0x874e518dcf12d9a6!2sFiat%20B%C4%B0LALLER!5e0!3m2!1str!2str!4v1767464378062!5m2!1str!2str" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </li>
+          </ul>
+        </header>
+        <footer style="background-color: #9E1B32;">
+          
+        </footer>
+      </section>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      (function () {
+        // Bir select'te değişiklik olunca bir sonraki <section>'a kaydır
+        function scrollToNext(el) {
+          const section = el.closest("section");
+          if (!section) return;
+          let next = section.nextElementSibling;
+          while (next && next.tagName !== "SECTION")
+            next = next.nextElementSibling;
+          if (next) next.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+        document.querySelectorAll("select").forEach((s) => {
+          s.addEventListener("change", () => scrollToNext(s));
+          // isteğe bağlı: Enter tuşuna basılınca da kayan davranış
+          s.addEventListener("keydown", (e) => {
+            if (e.key === "Enter") {
+              e.preventDefault();
+              scrollToNext(s);
+            }
+          });
+        });
+      })();
+    </script>
+    <script src="script/script.js"></script>
+  </body>
+</html>
